@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Welcomee</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="padding: 80px;">
+            <div class="col" style=" width: fit-content; height:500px; padding: 100px;">
+                <div class="container-1"
+                    style="padding: 10px; background-color: rgb(255, 255, 255); width: fit-content; position: relative; box-shadow: 5px 10px 10px rgb(105, 105, 105); border-radius: 5px">
+                    <h1 class="card"
+                        style=" color: white; padding: 10px; text-align:center; font-family:fantasy; font-size: 80px; text-shadow: 2px 2px 5px black;">
+                        COMMUNITY</h1>
+                    <p1 class="card" ; style="padding: 10px;">Welcome to our SignUp page. This page is created by
+                        BootStrap and JavaScript.<br>
+                        The main objective of this page is to test the following functionality:<br>
+                        1. Whether you are able to SignUp without providing details in the SignUp Fields<br>
+                        2. The page should throw an error message if the password fields donot match with each
+                        other.<br>
+                    </p1>
+                </div>
+            </div>
+            <div class="col" style="width: fit-content; padding: 100px;">
+                <div class="container-2"
+                    style="padding: 10px; background-color: rgb(255, 255, 255); width: fit-content; position: relative; box-shadow: 5px 10px 10px rgb(105, 105, 105); border-radius: 5px">
+                    <div class="card" style="width: 500px; padding: 10px;">
+
+                        <label>Enter User ID:</label>
+                        <input type="name" class="form-control" id="usid" style="width: auto;"><br>
+
+                        <label>Enter Password:</label>
+                        <input type="password" class="form-control" id="pass"
+                            style="width: auto;"><br>
+
+                        <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+                        <label id="fgt" type="button" style="text-align:right;">Forget Password?</label>
+                        <label id="test" style="color: rgb(255, 0, 0)"></label>
+
+                        <button type="button" class="btn btn-success" onclick="emp()" data-toggle="modal"
+                            data-target="#signupModal">Create Acoount</button>
+                        <div class="modal fade" id="signupModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="container"
+                                        style="padding: 10px; background-color: rgb(255, 255, 255); width: fit-content; position: relative; box-shadow: 5px 10px 10px rgb(105, 105, 105); border-radius: 5px">
+                                        <h1
+                                            style="padding: 10px; text-align:left; font-family:fantasy; font-size: 40px;">
+                                            Sign Up Here</h1>
+                                        <div class="card" style="width: 500px; padding: 10px;">
+                                            <div class="row">
+                                                <div class="col">
+
+                                                    <input type="text" class="form-control" placeholder="First Name"
+                                                        id="fname" style="width: auto;"><br>
+
+                                                    <input type="text" class="form-control" placeholder="Email"
+                                                        id="email" style="width: auto;"><br>
+
+                                                    <input type="text" class="form-control" placeholder="New Password"
+                                                        id="pwd" style="width: auto;"><br>
+
+                                                    <button type="button" class="btn btn-success"
+                                                        onclick="chckpwd()">Sign Up</button>
+
+                                                </div>
+                                                <div class="col">
+
+                                                    <input type="text" class="form-control" placeholder="Last Name"
+                                                        id="sname" style="width: auto;"><br>
+
+                                                    <input type="text" class="form-control" placeholder="UserID"
+                                                        id="uid" style="width: auto;"><br>
+
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Confirm Password" id="cpwd"
+                                                        style="width: auto;"><br>
+
+                                                    <button type="button" class="btn btn-danger" onclick="emp()"
+                                                        data-dismiss="modal">Close</button>
+
+                                                    <label id="test1" style="color: rgb(255, 0, 0)"></label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
